@@ -14,9 +14,6 @@ class Solution:
             p1 = p0 + 1
             p2 = len(nums) - 1
             while True:
-                a = nums[p0]
-                b = nums[p1]
-                c = nums[p2]
                 if p1 >= p2:
                     break
                 sum = nums[p0] + nums[p1] + nums[p2]
