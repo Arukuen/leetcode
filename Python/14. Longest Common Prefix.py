@@ -31,4 +31,21 @@ def longestCommonPrefix(strs: list[str]) -> str:
             return strs[0][:i]
 
 
+def longestCommonPrefix(strs: list[str]) -> str:
+    sorted_strs = sorted(strs)
+    left = sorted_strs[0]
+    right = sorted_strs[-1]
+    res = []
+
+    i = 0
+    while i < min(len(left), len(right)):
+        if left[i] == right[i]:
+            res.append(left[i])
+        else: 
+            break
+        i += 1
+    return ''.join(res)
+
+
+
 print(longestCommonPrefix(["flower","flow","flight"]))

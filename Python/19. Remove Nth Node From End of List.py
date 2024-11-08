@@ -20,7 +20,7 @@ class Solution:
             i += 1
         prev_n.next = prev_n.next.next
         return dummy.next
-
+    
 list1 = [1,2,3,4]
 
 def lst2link(lst):
